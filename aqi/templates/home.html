@@ -3,6 +3,19 @@
 
 {% block content %}
 
+	{% if error == True %}
 
+		<div class="alert alert-secondary" role="alert">
+  			{{ api }}
+		</div>
+
+	{% else %}
+
+		<h5>AQI : {{ api.data.aqi }}</h5>
+		<h5>Location : {{api.data.city.name}}</h5>
+
+	{% endif%}
+
+	
 
 {% endblock %}
