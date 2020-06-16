@@ -1,3 +1,5 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,6 +11,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
+      @import url(http://fonts.googleapis.com/earlyaccess/scheherazade.css);
+      
+      #desc {direction: rtl; font-family: 'Scheherazade', serif; font-size: 20pt; font-weight: bold; text-align: right;}
+      #btn_collapse {margin-left: 30px;}
+      #icon {margin-right: 20px;}
       footer {color: #ddd;}
       #good {background-color: #0C0; padding-left: 10px; padding-right: 10px; padding-top: 10px; color: white;border-radius: 5px; display:inline-block; margin-top: 20px;}
       #moderate {background-color: #FFFF00; padding-left: 10px; padding-right: 10px; padding-top: 10px; color: #000;border-radius: 5px; display:inline-block; margin-top: 20px;}
@@ -18,13 +25,13 @@
       #hazardous {background-color: #660000; padding-left: 10px; padding-right: 10px;padding-top: 10px; color: white; border-radius: 5px; display:inline-block; margin-top: 20px;}
       h5 {padding: 10px;}
     </style>
-    <title>Codepro AQI Search</title>
+    <title>Air Quality Search powered by Pooyesh Afzar</title>
   </head>
   <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="{% url 'home' %}">AQI Search</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a href="{% url 'home' %}"><img id = "icon" src="{% static 'img/weather_app.png' %}" alt=""/></a>
+      <button class="navbar-toggler" id="btn_collapse" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -37,8 +44,8 @@
         </ul>
         <form class="form-inline my-2 my-lg-0" method="POST" action="{% url 'home' %}">
           {% csrf_token %}
-          <input class="form-control mr-sm-2" type="search" placeholder="Enter City" aria-label="Search" name="city">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control mr-sm-2" type="search" placeholder="نام شهر را وارد کنید" aria-label="Search" name="city">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">جستجو</button>
         </form>
       </div>
     </nav>
@@ -58,7 +65,7 @@
       <!-- Copyright -->
       <div class="container">
 
-       <span>© 2020 Copyright : <i><b>Codepro Software</b></i></span>
+       <span>© 2020 Copyright : <i><b>Pooyesh Afzar</b></i></span>
 
       </div>
       <!-- Copyright -->
