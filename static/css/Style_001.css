@@ -1,0 +1,20 @@
+
+.site_top {background-color: #ee8; padding-top: 1rem;}     
+.boxLeft {float: left;}
+.boxRight {float: right;}
+.links {direction: rtl;}
+.about_btn, .search_btn {margin-right: 15px;}
+nav {margin-top: 0!important;}
+nav a, nav form input, nav form button {font-family: BZar,'BZar',tahoma; font-size: 1.3rem !important; }
+h1 {direction: rtl; font-family: BZar,'BZar',tahoma; text-align: right; font-size: 2rem; padding-right: 1rem;}
+#pooyesh_afzar {direction: rtl; font-family: BHoma,'BHoma',tahoma; text-align: left; font-size: 1rem; padding-left: 1rem; margin-bottom: 0!important;}
+#desc {direction: rtl; font-family: BZar,'BZar',tahoma; font-size: 16pt; text-align: right;}
+#icon {margin-right: 20px;}
+footer {color: #ddd;}
+#good {background-color: #0C0; padding-left: 10px; padding-right: 10px; padding-top: 10px; color: white;border-radius: 5px; display:inline-block; margin-top: 20px;}
+#moderate {background-color: #FFFF00; padding-left: 10px; padding-right: 10px; padding-top: 10px; color: #000;border-radius: 5px; display:inline-block; margin-top: 20px;}
+#usg {background-color: #FF9900; padding-left: 10px; padding-right: 10px;padding-top: 10px; color: white;border-radius: 5px; display:inline-block; margin-top: 20px;}
+#unhealthy {background-color: #FF0000; padding-left: 10px; padding-right: 10px;padding-top: 10px; color: white;border-radius: 5px; display:inline-block; margin-top: 20px;}
+#veryunhealty {background-color: #990066; padding-left: 10px; padding-right: 10px;padding-top: 10px; color: white;border-radius: 5px; display:inline-block; margin-top: 20px;}
+#hazardous {background-color: #660000; padding-left: 10px; padding-right: 10px;padding-top: 10px; color: white; border-radius: 5px; display:inline-block; margin-top: 20px;}
+h5 {padding: 10px;}

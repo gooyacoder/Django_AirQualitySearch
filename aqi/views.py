@@ -54,7 +54,7 @@ def home(request):
 		error = False
 
 		try:
-			request_api = requests.get('http://api.waqi.info/feed/shiraz/?token=e6089546a3dc14e1fe3d717777e9c7df3e7e5f99')
+			request_api = requests.get('http://api.waqi.info/feed/شیراز/?token=e6089546a3dc14e1fe3d717777e9c7df3e7e5f99')
 			api = json.loads(request_api.content)
 		except Exception as e:
 			api = e
@@ -87,7 +87,7 @@ def home(request):
 			description = 'هشدار بهداشتی در مورد شرایط اضطراری: همه به احتمال زیاد تحت تأثیر قرار می گیرند.'
 
 		return render(request, 'home.html', {'api' : api, 'error' : error,
-			'status' : status, 'status_color' : status_color, 'description' : description, })
+		'status' : status, 'status_color' : status_color, 'description' : description, })
 
 
 def about(request):
